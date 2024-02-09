@@ -4,6 +4,28 @@
     <meta charset="UTF-8">
     <title>Login</title>
     <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+    <style>
+        /* Estilos adicionales necesarios para el calendario */
+        #calendarioContainer {
+            display: none;
+            position: absolute;
+            background-color: white;
+            border: 1px solid black;
+            z-index: 1000;
+        }
+        .textocalendario {
+            color: black;
+        }
+        .diascalendario {
+            background-color: #112233;
+            color: white;
+        }
+        .diasfestivo {
+            background-color: red;
+            color: white;
+        }
+    </style>
 </head>
 <body>
 
@@ -18,42 +40,20 @@
     <input type="password" id="password" required>
     
     <label for="birthdate">Fecha de Nacimiento:</label>
-    <input type="date" id="birthdate" required>
+    <input type="text" id="birthdate" required>
     
-    <button type="button" onclick="validarUsuario()">Iniciar sesión</button>
+    <!-- Botón para mostrar el calendario -->
+    <button type="button" id="mostrarCalendario">Seleccionar fecha</button>
+    
+    <button type="button" id="iniciarSesionBtn">Iniciar sesión</button>
 </form>
 
-<script>
-// Definir usuarios y contraseñas en un objeto JavaScript
-var usuarios = {
-    "admin": "admin",
-    "Carlos": "Carlos",
-    "Danny": "Danny"
-    // Agrega más usuarios según sea necesario
-};
+<!-- Calendario Container -->
+<div id="calendarioContainer"></div>
 
-function validarUsuario() {
-    var username = document.getElementById("username").value;
-    var password = document.getElementById("password").value;
-    var birthdate = new Date(document.getElementById("birthdate").value);
-    var hoy = new Date();
-    var edad = hoy.getFullYear() - birthdate.getFullYear();
-    var mes = hoy.getMonth() - birthdate.getMonth();
-    if (mes < 0 || (mes === 0 && hoy.getDate() < birthdate.getDate())) {
-        edad--;
-    }
-    if (edad < 18) {
-        alert("Debes ser mayor de 18 años para acceder.");
-        return false;
-    }
-    if (usuarios[username] && usuarios[username] === password) {
-        // Redirigir a la página de inicio
-        window.location.href = "html/inicio.html";
-    } else {
-        alert("Usuario o contraseña incorrectos.");
-    }
-}
-</script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<script src="js/script_index.js"></script>
 
 </body>
 </html>

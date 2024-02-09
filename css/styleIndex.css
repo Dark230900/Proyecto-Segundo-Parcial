@@ -19,7 +19,7 @@
 }
 
 body {
-    background-image: linear-gradient(to bottom, #ffffff, #c0d9e5); /* Degradado de blanco a azul suave */
+    background-image: url(../img/fondoLogin2.jpeg);
     margin: 0; /* Para eliminar el margen predeterminado del body */
     padding: 0; /* Para eliminar el relleno predeterminado del body */
     font-family: Arial, sans-serif; /* Establecer una fuente de texto predeterminada */

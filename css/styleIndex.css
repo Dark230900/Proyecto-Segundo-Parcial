@@ -1,0 +1,36 @@
+/* Estilos adicionales necesarios para el calendario */
+#calendarioContainer {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid black;
+    z-index: 1000;
+}
+.textocalendario {
+    color: black;
+}
+.diascalendario {
+    background-color: #112233;
+    color: white;
+}
+.diasfestivo {
+    background-color: red;
+    color: white;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #ffffff, #c0d9e5); /* Degradado de blanco a azul suave */
+    margin: 0; /* Para eliminar el margen predeterminado del body */
+    padding: 0; /* Para eliminar el relleno predeterminado del body */
+    font-family: Arial, sans-serif; /* Establecer una fuente de texto predeterminada */
+}
+
+/* Estilos para el formulario */
+#loginForm {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semi-transparente para el formulario */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    width: 300px; /* Ancho del formulario */
+    margin: 100px auto; /* Centrar el formulario en la página */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}

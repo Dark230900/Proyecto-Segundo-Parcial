@@ -1,0 +1,177 @@
+        /*****Seccion antes del NavBar*****/
+        .last-header-contact {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px;
+            background-color: #f0f0f0;
+            font-size: 13px;
+        }
+        .contact-info {
+            display: flex;
+            align-items: center;
+            margin-left: 100px;
+        }
+        .contact-info p {
+            margin-right: 50px;
+        }
+        .redes-sociales {
+            display: flex;
+            align-items: center;
+        }
+        .redes-sociales a {
+            margin-right: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+
+
+        /*****Header con nav*****/
+        header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            background: linear-gradient(
+                to bottom,
+                #1b1926,
+                #1e2b46
+            );
+            color:#fff;
+
+        }
+        header nav a{
+            color: #fff;
+            text-decoration: none;
+            display: inline-block;
+            padding: 5px 10px;
+            transition: .5s;
+            border-radius: 10px;
+        }
+        header nav a:hover{
+            background-color: #e60122;
+        }
+        header .menu a{
+            text-decoration: none;
+            color: #fff;
+            font-size: 30px;
+        }
+        header .menu a:hover{
+            color: #e60122;
+        }
+
+        .logo{
+            width: 10%;
+        }
+
+
+        /*****FormularioCompras*******/
+
+        .styled-form {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .styled-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        .payment-method {
+            display: flex;
+            align-items: center;
+        }
+        
+        .payment-method label {
+            margin-right: 20px;
+        }
+        
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        
+
+        /*****BODY*****/
+        body {
+            background-size: cover;
+            font-family: 'Poppins', sans-serif;
+            margin: 0 auto;
+            padding: 0;
+        }
+        body h1{
+            text-align: center;
+            font-size: 80px;
+            margin: 1px;
+        }
+        body h2{
+            text-align: center;
+            font-size: 40px;
+            margin: 1px;
+        }
+        
+        
+        /*****SECTION*****/
+        section {
+            background-color: #E0E0E0;
+            background-size: cover;
+            width: 99%;
+            height: 10%;
+            padding: 10px;
+        }
+
+
+        /*****ARTICLE*****/
+        article{
+            flex: 1;
+            color: #ffffff;
+            text-align: center;
+        }
+
+
+        /*****ASIDE*****/
+        aside{
+            background-color: #E0E0E0;
+        }
+
+
+        /*****FOOTER*****/
+        footer {
+            padding: 25px;
+            text-align: center;
+            background-color: #1e2b46;
+            background-size: cover;
+            color: #fff;
+        }
+
+        

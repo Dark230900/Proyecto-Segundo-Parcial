@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            background-image: url(../img/fondotinto.jpg);
+            background-size: cover;
+            font-family: 'Poppins', sans-serif;
+            margin: 0 auto;
+            padding: 0;
+        }
+        body h1{
+            text-align: center;
+            font-size: 80px;
+            margin: 1px;
+        }
+        body h2{
+            text-align: center;
+            font-size: 40px;
+            margin: 1px;
+        }
+        section{
+            justify-content: center;
+            display: flex;
+            background-image: url(../img/fondoSection.jpg);
+            background-size: cover;
+            width: 99%;
+            height: 10%;
+            margin: 1px;
+            padding: 20px;
+        }
+        form {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 500px;
+            height: 770px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        input {
+            width: 70%;
+            padding: 8px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        select {
+            width: 70%;
+            padding: 8px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #f68009;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 70%;
+        }
+        header{
+            text-align: center;
+            display: flex;
+            margin: 10px; /* Elimina el margen */
+            padding: 0; /* Elimina el relleno */
+        }
+
+        #izq{
+            color: white;
+            flex: 1;
+            text-align: left;
+            font-size: 100px;
+        }
+        #der{
+            color: white;
+            flex: 1;
+            text-align: right;
+            font-size: 100px;
+        }
+        nav {
+            background-color: black;
+            width: 99%;
+            height: 10%;
+            margin-top: 20px;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex; /* Añadido para que los elementos estén en una sola línea */
+            justify-content: center; /* Opcional: para centrar los elementos en el nav */
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 40px; /* Espaciado entre elementos, ajusta según sea necesario */
+            padding: 1.5em 1.5em; /* Agregamos relleno para que sea más fácil hacer clic y ver el área afectada */
+
+            transition: background-color 0.3s; /* Agregamos una transición de color de fondo para que sea suave */
+        }
+
+        nav a:hover {
+            background-color: darkgrey; /* Cambia este color al que prefieras al pasar el puntero */
+            color: #ffffff; /* Cambiamos el color del texto al pasar el ratón */
+        }
+
+        footer {
+            padding: 25px;
+            text-align: center;
+            background-image: url(../img/fondofooter.jpg);
+            background-size: cover;
+        }
+        body h1{
+            color: #ffffff;
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <title>Inka Wasi</title>
+</head>
+<body>
+<h1>LICORERIA</h1>
+<header>
+    <h1 id="izq">INKA</h1>
+    <img src="../img/logo.png" width="20%">
+    <h2 id="der">WASI</h2>
+</header>
+<h2 style="color: white">"Tu destino exclusivo para experiencias líquidas inolvidables."</h2>
+
+<nav>
+    <ul>
+        <li><a href="inicio.html">INICIO</a></li>
+        <li><a href="nosotros.html">NOSOTROS</a></li>
+        <li><a href="sucursales.html">SUCURSALES</a></li>
+        <li><a href="catalogo.html">CATALOGO</a></li>
+        <li><a href="promociones.html">PROMOCIONES</a></li>
+        <li><a href="compras.html">COMPRAS</a></li>
+    </ul>
+</nav>
+
+<section>
+        <form action="../php/compra.php" method="post">
+            <h2>Formulario para comprar</h2><br>
+            <label for="nombres">Nombres:</label>
+            <input type="text" id="nombres" name="nombres" required pattern="[a-zA-Z]+\s[a-zA-Z]+" title="Ingrese dos palabras separadas por espacio" placeholder="Ejm: Danny Sebastian">
+
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" required pattern="[a-zA-Z]+\s[a-zA-Z]+" title="Ingrese dos palabras separadas por espacio" placeholder="Ejm: Quingaluisa Quispe">
+
+            <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required max="2005-01-01">
+
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" required placeholder="Ejm: Paute s7-295 y Sangay">
+
+            <label for="telefono">Número de Teléfono:</label>
+            <input type="text" id="telefono" name="telefono" required pattern="[0-9]{10}" title="Ingrese un número de teléfono válido de 10 dígitos" placeholder="Ejm: 0995064852">
+
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required pattern="[^\s]+@[^\s]+\.[a-zA-Z]{2,}" title="Ingrese una dirección de correo electrónico válida" placeholder="Ejm: dsquingaluisa1@espe.edu.ec">
+
+            <label>Método de Pago:</label>
+            <label for="efectivo">Efectivo</label>
+            <input type="radio" id="efectivo" name="metodo_pago" value="efectivo" required>
+            <label for="tarjeta">Tarjeta</label>
+            <input type="radio" id="tarjeta" name="metodo_pago" value="tarjeta" required>
+
+            <label for="productos">Productos:</label>
+            <select id="productos" name="productos[]" multiple required>
+                <option value="blue_label">Blue Label - Johnnie Walker</option>
+                <option value="grey_goose">Grey Goose Vodka</option>
+                <option value="patron_silver">Patrón Silver Tequila</option>
+                <option value="moet_chandon">Moët & Chandon Champagne</option>
+                <option value="hendricks">Hendrick's Gin</option>
+                <option value="jameson">Jameson Irish Whiskey</option>
+                <option value="baileys">Baileys Irish Cream</option>
+                <option value="don_julio">Don Julio Blanco Tequila</option>
+                <option value="chivas_regal">Chivas Regal Scotch Whisky</option>
+                <option value="absolut">Absolut Vodka</option>
+                <option value="Promocion1">Promocion 1</option>
+                <option value="Promocion2">Promocion 2</option>
+                <option value="Promocion3">Promocion 3</option>
+                <option value="Promocion4">Promocion 4</option>
+                <option value="Promocion5">Promocion 5</option>
+                <option value="Promocion6">Promocion 6</option>
+                <option value="Promocion7">Promocion 7</option>
+                <option value="Promocion8">Promocion 8</option>
+                <option value="Promocion9">Promocion 9</option>
+                <option value="Promocion10">Promocion 10</option>
+                <option value="Promocion11">Promocion 11</option>
+                <option value="Promocion12">Promocion 12</option>
+                <option value="Promocion13">Promocion 13</option>
+                <option value="Promocion14">Promocion 14</option>
+                <option value="Promocion15">Promocion 15</option>
+            </select>
+
+
+            <input type="submit" value="Enviar">
+        </form>
+</section>
+
+<footer>
+    <p>2023 Inka Wasi. Todos los derechos reservados.</p>
+</footer>
+</body>
+</html>

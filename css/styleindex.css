@@ -1,7 +1,6 @@
 
 body {
 
-            background-image: url(../img/fondotinto.jpg);
             background-size: cover;
             font-family: 'Poppins', sans-serif;
             margin: 0 auto;
@@ -160,7 +159,7 @@ body {
             color: #333;
         }
 
-        /* Seccion antes del NavBar */
+        /* Carrousel*/
         .carousel__contenedor {
             position: relative;
         }
@@ -177,8 +176,8 @@ body {
             line-height: 30px;
             text-align: center;
             background: none;
-            color: #fff;
-            opacity: 20%;
+            color: #a32323;
+            opacity: 100%;
         }
         
         .carousel__anterior:hover,
@@ -200,13 +199,48 @@ body {
         
         .carousel__elemento {
             text-align: center;
+            display: flex;
+        }
+
+        .texto {
+            flex: 1; /* El texto ocupará todo el espacio disponible */
+            display: flex;
+            flex-direction: column; /* Alinea verticalmente los párrafos */
+            justify-content: center;
+            padding: 50px;
+        }
+        
+        .texto p {
+            margin: 0; /* Elimina el margen predeterminado de los párrafos */
+            font-size: 50px;
+            text-align: left; /* Alinea el texto a la izquierda */
+        }
+
+        .carousel__elemento p:nth-child(1) {
+            font-family: Arial, sans-serif; /* Tipo de fuente para el primer párrafo */
+            font-size: 60px; /* Tamaño de fuente para el primer párrafo */
+        }
+        
+        .carousel__elemento p:nth-child(2) {
+            font-family: 'Times New Roman', serif; /* Tipo de fuente para el segundo párrafo */
+            font-size: 30px; /* Tamaño de fuente para el segundo párrafo */
+        }
+        
+        .carousel__elemento p:nth-child(3) {
+            font-family: 'Courier New', monospace; /* Tipo de fuente para el tercer párrafo */
+            font-size: 25px; /* Tamaño de fuente para el tercer párrafo */
+        }
+        
+        .imagen {
+            margin-left: 20px; /* Margen entre el texto y la imagen */
+            width: 30%;
         }
         
         .carousel__indicadores .glider-dot {
             display: block;
             width: 30px;
             height: 4px;
-            background: #fff;
+            background: #0f296e;
             opacity: .2;
             border-radius: 0;
         }

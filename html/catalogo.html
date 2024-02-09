@@ -1,187 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style type="text/css">
-        body {
-            margin: 0;
-            padding: 0;
-            background-image: url(../img/fondotinto.jpg);
-            background-size: cover;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        body h1 {
-            text-align: center;
-            font-size: 80px;
-            margin: 1px;
-            color: white;
-        }
-
-        body h2 {
-            text-align: center;
-            font-size: 40px;
-            margin: 1px;
-            color: white;
-        }
-
-        section {
-            margin: 10px;
-            padding: 10px;
-            background-color: azure;
-        }
-
-        header {
-            text-align: center;
-            display: flex;
-            margin: 10px;
-            padding: 0;
-        }
-
-        #izq {
-            color: white;
-            flex: 1;
-            text-align: left;
-            font-size: 100px;
-        }
-
-        #der {
-            color: white;
-            flex: 1;
-            text-align: right;
-            font-size: 100px;
-        }
-
-        nav {
-            background-color: black;
-            width: 99%;
-            height: 10%;
-            margin-top: 20px;
-            padding: 20px;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 40px;
-            padding: 1.5em 1.5em;
-            transition: background-color 0.3s;
-        }
-
-        nav a:hover {
-            background-color: darkgrey;
-            color: #ffffff;
-        }
-
-        article#Productos {
-            text-align: center;
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 20px;
-            border-radius: 10px;
-            margin: 20px;
-        }
-
-        article#Productos h2 {
-            color: #333;
-        }
-
-        article#Productos ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        article#Productos li {
-            margin: 10px;
-            text-align: center;
-        }
-
-        article#Productos h1 {
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-
-        article#Productos img {
-            width: 200px;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 5px;
-            transition: transform 0.3s ease-in-out;
-        }
-
-        article#Productos img:hover {
-            transform: scale(1.1);
-        }
-        footer {
-            padding: 25px;
-            text-align: center;
-            background-image: url(../img/fondofooter.jpg);
-            background-size: cover;
-        }
-    </style>
     <meta charset="UTF-8">
-    <title>Catálogo</title>
+    <title>Inka Wasi</title>
+    <link rel="stylesheet" href="../css/styleTienda.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.8/glider.min.css">
+
 </head>
 <body>
-    <h1>LICORERIA</h1>
-    <header>
-        <h1 id="izq">INKA</h1>
-        <img src="../img/logo.png" width="20%">
-        <h2 id="der">WASI</h2>
-    </header>
-    <h2>"Tu destino exclusivo para experiencias líquidas inolvidables."</h2>
+
+<div class="last-header-contact">
+        <div class="contact-info">
+            <p><i class="fa-solid fa-envelope"></i> licoreríaiw@inkawasi.com</p>
+            <p><i class="fa-solid fa-phone"></i> 02-266-7877</p>
+        </div>
+        <div class="redes-sociales">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+</div>
+
+<header>
+    <h1>INKA WASI </h1>
     <nav>
-        <ul>
-            <li><a href="inicio.html">INICIO</a></li>
-            <li><a href="nosotros.html">NOSOTROS</a></li>
-            <li><a href="sucursales.html">SUCURSALES</a></li>
-            <li><a href="catalogo.html">CATALOGO</a></li>
-            <li><a href="promociones.html">PROMOCIONES</a></li>
-            <li><a href="compras.html">COMPRAS</a></li>
-        </ul>
+        <a href="inicio.html">INICIO</a>
+        <a href="nosotros.html">NOSOTROS</a>
+        <a href="catalogo.html">TIENDA</a>
+        <a href="compras.html">COMPRAS</a>
     </nav>
-    <article id="Productos">
-        <h2>Productos</h2>
-        <ul>
-            <li>
-                <h1>Whisky</h1>
-                <img src="../img/whisky1.jpg">
-                <img src="../img/whisky2.jpg">
-                <img src="../img/whiky3.png">
-                <img src="../img/whisky4.jpg">
-            </li>
-            <li>
-                <h1>Ron</h1>
-                <img src="../img/ron1.webp">
-                <img src="../img/ron2.jpg">
-                <img src="../img/ron3.jpg">
-                <img src="../img/ron4.jpg">
-            </li>
-            <li>
-                <h1>Tequila</h1>
-                <img src="../img/tequila1.jpg">
-                <img src="../img/tequila2.jpg">
-                <img src="../img/tequila3.jpg">
-                <img src="../img/tequila4.jpg">
-            </li>
-            <li>
-                <h1>Hiervas</h1>
-                <img src="../img/hiervas4.jpg">
-                <img src="../img/hiervas1.jpg">
-                <img src="../img/hiervas2.jpg">
-                <img src="../img/hiervas3.jpg">
-            </li>
-        </ul>
-    </article>
-    <footer>
-        <p>&copy; 2023 Inka Wasi. Todos los derechos reservados.</p>
-    </footer>
+    <div class="menu">
+        <a href="#">&#8801;</a>
+    </div>
+</header>
+
+<section class="productos">
+    <div class="whisky">
+        <h1><span>WHISKY</span></h1>
+    <div class="img-gallery">
+        <div class="img-container">
+            <img src="../img/whisky1.jpg" alt="">
+            <div class="overlay">Jack Daniel's, el whisky de Tennessee desde 1866, famoso por su sabor único 
+                y proceso de destilación especial. Un ícono del bourbon, reconocido globalmente por su calidad.</div>
+        </div>
+        <div class="img-container">
+            <img src="../img/whisky2.jpg" alt="">
+            <div class="overlay">Red Label es una marca de whisky escocés producida por Johnnie Walker, 
+                con una historia que se remonta a 1820. Reconocido por su mezcla audaz y su carácter distintivo.</div>
+        </div>
+        <div class="img-container">
+            <img src="../img/whiky3.png" alt="">
+            <div class="overlay">Label 5 es una marca de whisky escocés que se destaca por su suavidad y 
+                equilibrio. Con una historia que se remonta a 1938, Label 5 ha ganado reconocimiento por su calidad y asequibilidad.</div>
+        </div>
+        <div class="img-container">
+            <img src="../img/whisky4.jpg" alt="">
+            <div class="overlay">Grant's es una marca escocesa de whisky conocida por su suavidad y calidad desde 
+                1887. Con una mezcla única de maltas y granos seleccionados, ofrece un perfil de sabor equilibrado y aromas sutiles. </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="whisky">
+        <h1><span>Ron</span></h1>
+    <div class="img-gallery">
+        <div class="img-container">
+            <img src="../img/ron1.webp" alt="">
+            <div class="overlay">Ron 100 Fuegos es una marca de ron que se destaca por su rica historia y sabor distintivo. Con sede en el Caribe, esta marca ha ganado reconocimiento por su dedicación a la artesanía y la calidad de sus productos.</div>
+        </div>
+        <div class="img-container">
+            <img src="../img/ron2.jpg" alt="">
+            <div class="overlay">Ron Abuelo es una reconocida marca de ron de Panamá, con una tradición que se remonta a más de un siglo. Destilado con maestría a partir de la caña de azúcar y envejecido en barricas de roble.</div>
+        </div>
+        <div class="img-container">
+            <img src="../img/ron3.jpg" alt="">
+            <div class="overlay">Ron Pom Pon es una marca de ron de origen dominicano. Conocido por su sabor suave y versátil, Ron Pom Pon es una opción popular para cócteles tropicales y tragos mixtos. </div>
+        </div>
+        <div class="img-container">
+            <img src="../img/ron4.jpg" alt="">
+            <div class="overlay">Ron San Miguel es una reconocida marca de ron que proviene de Filipinas. Con una historia que se remonta a más de 150 años, este ron se ha convertido en un símbolo de calidad y tradición en el país. </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="whisky">
+        <h1><span>Hiervas</span></h1>
+    <div class="img-gallery">
+        <div class="img-container">
+            <img src="../img/hiervas1.jpg" alt="">
+            <div class="overlay">Jägermeister es un licor alemán elaborado a partir de una mezcla de más de 56 hierbas, frutas y especias. Conocido por su distintivo sabor dulce y herbáceo.</div>
+        </div>
+        <div class="img-container">
+            <img src="../img/hiervas2.jpg" alt="">
+            <div class="overlay">Wolfschmidt Kummel es un licor tradicional de origen ruso y polaco. Este licor se destaca por su sabor único, que combina el dulzor del azúcar con notas de comino, hinojo y otras especias. </div>
+        </div>
+        <div class="img-container">
+            <img src="../img/hiervas3.jpg" alt="">
+            <div class="overlay">Altmünster es conocido por su sabor distintivo y suavidad, y a menudo se disfruta como aperitivo o digestivo.Es un licor de hierbas de origen alemán.</div>
+        </div>
+        <div class="img-container">
+            <img src="../img/hiervas4.jpg" alt="">
+            <div class="overlay">Gluksmaister es conocido por su sabor distintivo y suavidad, es un licor alemán elaborado a partir de una mezcla de más de 56 hierbas</div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<footer>
+    <p>Copyright © 2023 INKA WASI | Designed by Dark</p>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.8/glider.min.js"></script>
+<script src="https://kit.fontawesome.com/0dcfdf2b29.js" crossorigin="anonymous"></script>
+<script src="../js/script.js"></script>
 </body>
 </html>
